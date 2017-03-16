@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>FriendFinder</title>
+	<title>FriendFinder Survey Page</title>
 
 	<!-- Latest compiled and minified CSS & JS -->
+--
+
+
+	<!-- Chosen -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+	--
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -12,20 +20,19 @@
 	<!-- Font Awesome Glyphicons -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
-	<!-- Chosen -->
+		<!-- Chosen -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
 </head>
+
 <body>
 
 	<div class="container">
-
-		<h2>Survey Questions</h2>
-		<hr>
-
-		<h3><strong>About You</strong></h3>
-		<h4>Name (Required)</h4>
+		<div>
+			<h2>Survey Questions</h2>
+			<h3><strong>Who are You?</strong></h3>
+			<h4>Name (Required)</h4>
 		<input type="text" name="" id="name" class="form-control" required >
 
 		<h4>Link to Photo Image (Required)</h4>
@@ -34,7 +41,7 @@
 		<hr>
 
 		<h3><strong>Question 1</strong></h3>
-		<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+		<h4>You are always looking for an adventure.</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q1">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -45,7 +52,7 @@
       	</select>
 
 		<h3><strong>Question 2</strong></h3>
-		<h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+		<h4>Generally speaking, you rely more on your instinct than your imagination.</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q2">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -69,7 +76,7 @@
 
 
 		<h3><strong>Question 4</strong></h3>
-		<h4>You rarely do something just out of sheer curiosity.</h4>
+		<h4>You are generally an outdoors person.</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q4">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -81,7 +88,7 @@
 
 
 		<h3><strong>Question 5</strong></h3>
-		<h4>People can rarely upset you.</h4>
+		<h4>Generally you accept people are people and rarely upset you.</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q5">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -93,7 +100,7 @@
 
 
 		<h3><strong>Question 6</strong></h3>
-		<h4>It is often difficult for you to relate to other people’s feelings.</h4>
+		<h4>You don't care to relate to other people’s feelings.</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q6">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -116,7 +123,7 @@
       	</select>
 
 		<h3><strong>Question 8</strong></h3>
-		<h4>You rarely get carried away by fantasies and ideas.</h4>
+		<h4>You live more in dreams than reality.</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q8">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -127,7 +134,7 @@
       	</select>
 
 		<h3><strong>Question 9</strong></h3>
-		<h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+		<h4>You care about the well being of others and whole heartedly listen when someone is upset.</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q9">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -138,7 +145,7 @@
       	</select>
 
 		<h3><strong>Question 10</strong></h3>
-		<h4>You feel more energetic after spending time with a group of people.</h4>
+		<h4>You would rather stay home watching TV then go out and socialize with others.</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q10">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -153,12 +160,12 @@
 
 		<!-- Submit Button -->
 		<button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
- Submit</button>
+ 		Submit</button>
 
 		<hr>
 	    <footer class="footer">
 	      <div class="container">
-		        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+		  <p><a href="/api/friends">API Friends List</a> | <a href="git@github.com:lvanok/FriendFinder.git">GitHub Repo</a></p>
 	      </div>
 	    </footer>
 
@@ -176,7 +183,7 @@
 	      </div>
 	      <div class="modal-body">
 	        <h2 id="matchName"></h2>
-	        <img id="matchImg" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+	        <img id="matchImg" src="file:///Users/lisavanorden/Documents/RCB_files/week13_files/wk13_hw/friendfinder/assets/images/floya_avatar_pic.jpg" alt="">
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -186,8 +193,9 @@
 	  </div>
 	</div>
 
-  <script type="text/javascript">
+<!-- //This section sends form data to our server -->
 
+  <script type="text/javascript">
   	// Chosen CSS
     var config = {
       '.chosen-select'           : {},
@@ -199,10 +207,8 @@
     for (var selector in config) {
       $(selector).chosen(config[selector]);
     }
-
     // Capture the form inputs 
     $("#submit").on("click", function(){
-
     	// Form validation
     	function validateForm() {
 		  var isValid = true;
@@ -210,15 +216,12 @@
 		    if ( $(this).val() === '' )
 		        isValid = false;
 		  });
-
 		  $('.chosen-select').each(function() {
-
 		  	if( $(this).val() === "")
 		  		isValid = false
 		  })
 		  return isValid;
 		}
-
 		// If all required fields are filled
 		if (validateForm() == true)
 		{
@@ -228,21 +231,15 @@
 	    		photo: $("#photo").val(),
 	    		scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
 	    	}
-
-
 	    	// Grab the URL of the website
 	    	var currentURL = window.location.origin;
-
 	    	// AJAX post the data to the friends API. 
 	    	$.post(currentURL + "/api/friends", userData, function(data){
-
 	    		// Grab the result from the AJAX post so that the best match's name and photo are displayed.
 	    		$("#matchName").text(data.name);
 	    		$('#matchImg').attr("src", data.photo);
-
 		    	// Show the modal with the best match 
 		    	$("#resultsModal").modal('toggle');
-
 	    	});
 		}
 		else
@@ -252,9 +249,21 @@
     	
     	return false;
     });
-
-
   </script>
+
 
 </body>
 </html>
+
+<!-- Compatibility should be determined based on the following.
+Each user's results should be converted into a simple array of numbers (ex: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]).
+You will then compare the difference between the user's scores against other users' scores, question by question. You will then add up the differences to calculate the totalDifference.
+Example:
+User 1: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
+User 2: [3, 2, 6, 4, 5, 1, 2, 5, 4, 1]
+Total Difference: 2 + 1 + 2 = 5
+Remember to use the absolute value of the differences (i.e 5-3 and 3-5 should both be 2).
+The person with the closest match should be the one with the "least" amount of difference.
+Once you've determined the closest match, display the result back to the user in the form of a modal pop-up.
+The result should display both t
+ -->

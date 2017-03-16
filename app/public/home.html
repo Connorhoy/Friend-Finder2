@@ -1,29 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title> Friend Finder</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<title>FriendFinder</title>
+
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Font Awesome Glyphicons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<!-- Chosen -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+
 </head>
 <body>
-<!--Header section of the home page -->
-<div class="jumbotron text-center">
-	<h1>
-	Friend Finder 
-	</h1>
-	<p>
-			Answer a few basic questions.
-		<br>You will then be matched with the greatest compatibility!
-	</p>
 	<div>
-		<a href="./survey">
-		<button type="button" class= "btn btn-primary" id= "survey">Go to Survey</button>
-	</div>		
-</div>
-<div>
-	<a href="./friends">
-	<p>API Friends List</p>
-</div>
- </body>
+		<div class="container">
+
+		<div class="jumbotron">
+			<padding-top
+			<h1 class=""><i class="glyphicon glyphicon-heart" aria-hidden="true"></i> Find a Date</h1>
+					<hr>
+					<h2 class="">Answer a few basic questions. </h2>
+					<h2 class="">Let's see who you are matched with!</h2>
+					<br>
+
+					<div class="">
+						<a href="/survey"><button type="button" class="btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span> Go to Questionnaire</h4></button></a>	
+					</div>
+
+				</div>
+
+	    <footer class="footer">
+	    <div class="container">
+		        <p><a href="/api/friends">API Friends List</a> | <a href="http://git@github.com:lvanok/FriendFinder.git">GitHub Repo</a></p>
+	      </div>
+	    </footer>
+
+	</div>
+
+</body>
 </html>

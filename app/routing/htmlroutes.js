@@ -1,18 +1,15 @@
-// Packages
-var path = require("path");
+// Required packages.
+var path = require('path');
 
-// Routing for friends.js
-module.exports = function (app) {
-	app.get("/friends", function (req, res) {
-		res.sendFile(path.join(__dirname, "/../data/friends.js"))
-	})
-};
+// Routing URLs
+module.exports = function(app) {
+    // Handle the survey page.
+    app.get('/survey', function(req, res) {
+        res.sendFile(path.join(__dirname, '/../public/survey.html'));
+    });
 
-// Routing for Survey HTML.
-module.exports = function (app) {
-	app.get("/survey", function (req, res ) {
-		res.sendFile(path.join(__dirname, "/../public/survey.html"))
-	})
-};
-
-
+    // Showing home page.
+    app.use(function(req, res) {
+        res.sendFile(path.join(__dirname, '/../public/home.html'));
+    });
+}

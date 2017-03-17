@@ -1,173 +1,56 @@
 // Friends(DATA)
 
-// ===============================================================================
-// DATA
-// Below data will hold all of the reserved tables.
-// Initially we just set it equal to a "dummy" customer.
-// But you could have it be an empty array as well.
-// ===============================================================================
 var friends = [
-  {
-      "name":"Owen",
-      "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-      "scores":[
-         5,
-         1,
-         4,
-         4,
-         5,
-         1,
-         2,
-         5,
-         4,
-         1
-          ]
-      },
-  {
-  "name":"Pavan",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[
-     5,
-     1,
-     4,
-     4,
-     5,
-     1,
-     2,
-     5,
-     4,
-     1
-      ]
-},
-{
-  "name":"Angel",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[
-     9,
-     1,
-     4,
-     4,
-     5,
-     1,
-     2,
-     5,
-     4,
-     1
-      ]
-},
-{
-  "name":"Karina",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[
-     5,
-     1,
-     4,
-     3,
-     2,
-     6,
-     9,
-     8,
-     9,
-     9
-      ]
-},
-{
-  "name":"Miriam",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[
-     5,
-     1,
-     4,
-     3,
-     2,
-     6,
-     9,
-     8,
-     9,
-     9
-      ]
-},
-{
-  "name":"Lisa",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[
-     5,
-     1,
-     4,
-     3,
-     2,
-     6,
-     9,
-     8,
-     9,
-     9
-      ]
-},
-{
-  "name":"Nicole",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[
-     5,
-     1,
-     4,
-     3,
-     2,
-     6,
-     9,
-     8,
-     9,
-     9
-      ]
-},
-{
-  "name":"Jason",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[
-     5,
-     1,
-     4,
-     3,
-     2,
-     6,
-     9,
-     8,
-     9,
-     9
-      ]
-},
-{
-  "name":"Nate",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[
-     5,
-     1,
-     4,
-     3,
-     2,
-     6,
-     9,
-     8,
-     9,
-     9
-      ]
-},
-{
-  "name":"Ken",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[
-     5,
-     1,
-     4,
-     3,
-     2,
-     6,
-     9,
-     8,
-     9,
-     9
-      ]
-}
-]
+    {
+        name:"Garrus",
+        species: "Turian",
+        photo:"http://www.rarityguide.com/articles/content_images/5/MassEffect3/Garrus.jpg",
+        scores:[
+            3,
+            2,
+            4,
+            4,
+            1,
+            4,
+            3,
+            1,
+            5,
+            3
+        ]
+    },
+    {
+        name:"Tali",
+        species: "Quarian",
+        photo:"http://vignette3.wikia.nocookie.net/masseffect/images/a/aa/Tali_ME_Core.jpg/revision/latest?cb=20100617205738",
+        scores:[
+            5,
+            4,
+            4,
+            4,
+            2,
+            5,
+            5,
+            2,
+            3,
+            5
+        ]
+    },{
+        name:"Joker",
+        species: "Human",
+        photo:"http://social.bioware.com/uploads_project/project_gallery/9000/8744/4886/14465.jpg",
+        scores:[
+            5,
+            1,
+            4,
+            1,
+            3,
+            5,
+            5,
+            4,
+            1,
+            1
+        ]
+    }
+];
 
-// Note how we export the array. This makes it accessible to other files using require.
 module.exports = friends;
